@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Speech to Text Converter</h1>
+
+        <button id="record-btn">🎤 Start Recording</button>
+        <p id="recording-status"></p>
+
+        <input type="file" id="audio-upload" accept="audio/*">
+        <button id="upload-btn">📤 Upload Audio</button>
+
+        <h2>Converted Text:</h2>
+        <p id="output-text"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
